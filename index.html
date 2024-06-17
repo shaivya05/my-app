@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="src/styles.css"/>
 </head>
 <body>
+  <div class="weather-app">
   <header>
     <form>
-        <input type="search" placeholder="enter a city..." required/>
-        <input type="submit" value="search"/>
+        <input type="search" placeholder="enter a city..." required class="search-form-input"/>
+        <input type="submit" value="search" class="search-form-button"/>
     </form>
   </header>
   <div>
     <h1>Paris</h1>
-    <p>
+    <div class="weather-app-data ">
+    <p class="details">
         Tuesday 14:49, scattered clouds
           <br />
-          Humidity: 66%, Wind: 3.13km/h
+          Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
     </p>
-  </div>
-    <div>🌤️ 12°C</div>
+     
+    <div class="value">
+      <div class="icon">🌤️</div>
+      <div class="value-temp">12</div>
+      <div class="sign">°C</div>
+    </div>
+    </div>
+    </div>
     <footer>
       This project was coded by
       <a href="https://github.com/shaivya05" target="_blank"> shaivya</a>,
@@ -33,5 +42,6 @@
         >hosted on Netlify</a
       >
     </footer>
+    </div>
 </body>
 </html>

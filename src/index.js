@@ -14,6 +14,8 @@ function refresh(response) {
   f.innerHTML = response.data.wind.speed;
   let g = document.querySelector("#time");
    g.innerHTML=formatDate(date);
+   let h=document.querySelector("#icon");
+   h.innerHTML=`<img src="${response.data.condition.icon_url}" class="weather_icon">`
 }
 // Tuesday 14:49
 function formatDate(date)

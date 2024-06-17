@@ -69,9 +69,10 @@ h1 {
   margin-left: 6px;
   font-weight: bold;
 }
-.icon {
+#icon {
   font-size: 44px;
-  margin-top: 10px;
+ width:88px;
+ height:88px;
 }
 .sign {
   margin-top: 16px;
